@@ -7,8 +7,9 @@
 
 import UIKit
 
-class AddFruitsViewController: UIViewController {
+class AddFruitsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     var frutasviewmodel = FrutasViewModel()
+    
     var result = Result()
     var fruta = Frutas(Id: 0, Clave: 0, Nombre: "", Imagen: "", Precio: Precios(PrecioKg: 0.0, PrecioMkg: 0.0, PrecioDocena: 0.0), FechaRegistro: "", FechaActualizacion: "")
     var idFruta = 0
@@ -35,16 +36,18 @@ class AddFruitsViewController: UIViewController {
     @IBOutlet weak var PrecioDocenatext: UITextField!
     @IBOutlet weak var RegistroDatePicker: UIDatePicker!
     @IBOutlet weak var UltimaModificacionDatePicker: UIDatePicker!
-    
     @IBOutlet weak var NombreFruittext: UITextField!
+    let imagepicker = UIImagePickerController()
 
-    
     
     var dateviewmodel = DateViewModel()
     override func viewDidLoad() {
         alerttrue.addAction(Ok)
         alertfalse.addAction(Ok)
         super.viewDidLoad()
+        imagepicker.delegate = self
+        imagepicker.sourceType = .photoLibrary
+        imagepicker.isEditing = false
         validacion()
     }
     func validacion(){
@@ -67,10 +70,18 @@ class AddFruitsViewController: UIViewController {
                 RegistroDatePicker.date = fechaDate.date(from: fecharegistro)!
                 let fechaModificacion = fruta.FechaActualizacion
                 UltimaModificacionDatePicker.date = fechaDate.date(from: fechaModificacion)!
+                if fruta.Imagen == ""{
+                    FruitImage.image = UIImage(named:  "Image")
+                }
+                else{
+                    let imagedata = Data(base64Encoded: fruta.Imagen, options: Data.Base64DecodingOptions.ignoreUnknownCharacters)
+                    FruitImage.image = UIImage(data: imagedata!)
+                }
             }
             
         }
         else{
+            FruitImage.image = UIImage(named: "Image")
             Actualizarbutton.isHidden = true
             AgregarButton.isHidden = false
             RegistroDatePicker.isHidden = true
@@ -113,12 +124,23 @@ class AddFruitsViewController: UIViewController {
             PrecioDocenatext.backgroundColor = .red
             return
         }
+        let image = FruitImage.image
+        let imagenstring :String
+        if FruitImage.restorationIdentifier == "Image"{
+            imagenstring = ""
+        }
+        else{
+            let imagedata = image!.pngData()! as NSData
+            imagenstring = imagedata.base64EncodedString(options: .lineLength64Characters)
+        }
+        
+        
         
         let fecharegistro = dateviewmodel.getDate()
         let precios = Precios(PrecioKg: preciokg, PrecioMkg: preciomkg, PrecioDocena: precioDocena)
         
         if idFruta == 0{
-            result.Object = Frutas(Id: 0, Clave: clavetext, Nombre: nombre, Imagen: "", Precio: precios, FechaRegistro: fecharegistro, FechaActualizacion: fecharegistro)
+            result.Object = Frutas(Id: 0, Clave: clavetext, Nombre: nombre, Imagen: imagenstring, Precio: precios, FechaRegistro: fecharegistro, FechaActualizacion: fecharegistro)
             result = frutasviewmodel.Add(frutas: result.Object as! Frutas)
             if result.Correct == true{
                 print("Correc")
@@ -129,7 +151,7 @@ class AddFruitsViewController: UIViewController {
                 self.present(alertfalse, animated: true)
             }}
         else{
-            result.Object = Frutas(Id: idFruta, Clave: clavetext, Nombre: nombre, Imagen: "", Precio: precios, FechaRegistro: "", FechaActualizacion: fecharegistro)
+            result.Object = Frutas(Id: idFruta, Clave: clavetext, Nombre: nombre, Imagen: imagenstring, Precio: precios, FechaRegistro: "", FechaActualizacion: fecharegistro)
             result = frutasviewmodel.Update(fruta: result.Object as! Frutas)
             if result.Correct == true{
                 print("Correc")
@@ -143,6 +165,14 @@ class AddFruitsViewController: UIViewController {
             }
             
         }
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        FruitImage.image = info[.originalImage] as? UIImage
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func AddPhoto(_ sender: Any) {
+        self.present(imagepicker, animated: true)
     }
     
     @IBAction func AddAction(_ sender: Any) {

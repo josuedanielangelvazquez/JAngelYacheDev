@@ -136,6 +136,9 @@
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="camera.fill" catalog="system"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="AddPhoto:" destination="qg6-j9-Alg" eventType="touchUpInside" id="B3y-Pk-Tgf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

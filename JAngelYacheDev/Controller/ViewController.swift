@@ -32,7 +32,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         loadData()
     }
     
-
+    func loaddatabyname(){
+        if SearchText.text != nil || SearchText.text != ""{
+            result = frutasviewmodel.GetByNombre(nombreFruta: SearchText.text!)
+            if result.Correct!{
+                frutas = result.Objects! as! [Frutas]
+                FrutasTablewView.reloadData()
+            }}
+        else{
+            SearchText.placeholder = "Ingrese una fruta valida"
+        }
+    }
     func loadData(){
          result = frutasviewmodel.getAll()
          if result.Correct!{
@@ -60,6 +70,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.Preciokglbl.text = "Kg  $\(frutas[indexPath.row].Precio.PrecioKg)"
         cell.PrecioMkglbl.text = "Mk  $\(frutas[indexPath.row].Precio.PrecioMkg)"
         cell.Preciodocenalbl.text = "Docena  $\(frutas[indexPath.row].Precio.PrecioDocena)"
+        if frutas[indexPath.row].Imagen == ""{
+            cell.ImageFruits.image = UIImage(systemName: "doc.circle")
+        }
+        else{
+            let imagedata = Data(base64Encoded: frutas[indexPath.row].Imagen, options: Data.Base64DecodingOptions.ignoreUnknownCharacters)
+            cell.ImageFruits.image = UIImage(data: imagedata!)
+        }
         return cell
     }
     
@@ -69,6 +86,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBAction func SearchAction(_ sender: Any) {
         
+    loaddatabyname()
     }
     
 
