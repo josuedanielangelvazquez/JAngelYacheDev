@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32F0F241F8F3EA147188C68D /* Pods_JAngelYacheDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EAA43A3F09C1C9D6397A17 /* Pods_JAngelYacheDev.framework */; };
 		A71500E729BD6AF6004E5375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71500E629BD6AF6004E5375 /* AppDelegate.swift */; };
 		A71500E929BD6AF6004E5375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71500E829BD6AF6004E5375 /* SceneDelegate.swift */; };
 		A71500EB29BD6AF6004E5375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71500EA29BD6AF6004E5375 /* ViewController.swift */; };
 		A71500EE29BD6AF6004E5375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71500EC29BD6AF6004E5375 /* Main.storyboard */; };
 		A71500F029BD6AF7004E5375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71500EF29BD6AF7004E5375 /* Assets.xcassets */; };
 		A71500F329BD6AF7004E5375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71500F129BD6AF7004E5375 /* LaunchScreen.storyboard */; };
+		A71500FD29BD6B3C004E5375 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71500FC29BD6B3C004E5375 /* DB.swift */; };
+		A715010029BD6B79004E5375 /* FrutasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71500FF29BD6B79004E5375 /* FrutasViewModel.swift */; };
+		A715010329BD8899004E5375 /* Frutas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A715010229BD8899004E5375 /* Frutas.swift */; };
+		A715010529BD89BD004E5375 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A715010429BD89BD004E5375 /* Result.swift */; };
+		A715010929BEA7CC004E5375 /* DateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A715010829BEA7CC004E5375 /* DateViewModel.swift */; };
+		A715010C29BEACCB004E5375 /* AddFruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A715010B29BEACCB004E5375 /* AddFruitsViewController.swift */; };
+		A715010F29BEC4FA004E5375 /* FrutasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A715010D29BEC4FA004E5375 /* FrutasTableViewCell.swift */; };
+		A715011029BEC4FA004E5375 /* FrutasTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A715010E29BEC4FA004E5375 /* FrutasTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1129625C85927E7F9373CF23 /* Pods-JAngelYacheDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAngelYacheDev.debug.xcconfig"; path = "Target Support Files/Pods-JAngelYacheDev/Pods-JAngelYacheDev.debug.xcconfig"; sourceTree = "<group>"; };
+		670C9AAD605E6BF1D96770D5 /* Pods-JAngelYacheDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAngelYacheDev.release.xcconfig"; path = "Target Support Files/Pods-JAngelYacheDev/Pods-JAngelYacheDev.release.xcconfig"; sourceTree = "<group>"; };
 		A71500E329BD6AF6004E5375 /* JAngelYacheDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAngelYacheDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71500E629BD6AF6004E5375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A71500E829BD6AF6004E5375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,15 @@
 		A71500EF29BD6AF7004E5375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A71500F229BD6AF7004E5375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A71500F429BD6AF7004E5375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71500FC29BD6B3C004E5375 /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		A71500FF29BD6B79004E5375 /* FrutasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasViewModel.swift; sourceTree = "<group>"; };
+		A715010229BD8899004E5375 /* Frutas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frutas.swift; sourceTree = "<group>"; };
+		A715010429BD89BD004E5375 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A715010829BEA7CC004E5375 /* DateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewModel.swift; sourceTree = "<group>"; };
+		A715010B29BEACCB004E5375 /* AddFruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFruitsViewController.swift; sourceTree = "<group>"; };
+		A715010D29BEC4FA004E5375 /* FrutasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasTableViewCell.swift; sourceTree = "<group>"; };
+		A715010E29BEC4FA004E5375 /* FrutasTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrutasTableViewCell.xib; sourceTree = "<group>"; };
+		E3EAA43A3F09C1C9D6397A17 /* Pods_JAngelYacheDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JAngelYacheDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F0F241F8F3EA147188C68D /* Pods_JAngelYacheDev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A21620450031D3AF937A5168 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1129625C85927E7F9373CF23 /* Pods-JAngelYacheDev.debug.xcconfig */,
+				670C9AAD605E6BF1D96770D5 /* Pods-JAngelYacheDev.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A71500DA29BD6AF6004E5375 = {
 			isa = PBXGroup;
 			children = (
 				A71500E529BD6AF6004E5375 /* JAngelYacheDev */,
 				A71500E429BD6AF6004E5375 /* Products */,
+				A21620450031D3AF937A5168 /* Pods */,
+				CC4531EE6910EA2A162DF2FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,88 @@
 		A71500E529BD6AF6004E5375 /* JAngelYacheDev */ = {
 			isa = PBXGroup;
 			children = (
-				A71500E629BD6AF6004E5375 /* AppDelegate.swift */,
-				A71500E829BD6AF6004E5375 /* SceneDelegate.swift */,
-				A71500EA29BD6AF6004E5375 /* ViewController.swift */,
-				A71500EC29BD6AF6004E5375 /* Main.storyboard */,
+				A715010729BE8F49004E5375 /* View */,
+				A715010629BE8F3E004E5375 /* Controller */,
+				A715010129BD8889004E5375 /* Model */,
+				A71500FA29BD6B10004E5375 /* ViewModel */,
 				A71500EF29BD6AF7004E5375 /* Assets.xcassets */,
 				A71500F129BD6AF7004E5375 /* LaunchScreen.storyboard */,
 				A71500F429BD6AF7004E5375 /* Info.plist */,
 			);
 			path = JAngelYacheDev;
+			sourceTree = "<group>";
+		};
+		A71500FA29BD6B10004E5375 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A715010A29BEAC31004E5375 /* AppDelegate */,
+				A71500FE29BD6B65004E5375 /* Frutas */,
+				A71500FB29BD6B2A004E5375 /* DB */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A71500FB29BD6B2A004E5375 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A71500FC29BD6B3C004E5375 /* DB.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		A71500FE29BD6B65004E5375 /* Frutas */ = {
+			isa = PBXGroup;
+			children = (
+				A71500FF29BD6B79004E5375 /* FrutasViewModel.swift */,
+				A715010829BEA7CC004E5375 /* DateViewModel.swift */,
+			);
+			name = Frutas;
+			path = DB;
+			sourceTree = "<group>";
+		};
+		A715010129BD8889004E5375 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A715010229BD8899004E5375 /* Frutas.swift */,
+				A715010429BD89BD004E5375 /* Result.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A715010629BE8F3E004E5375 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A715010D29BEC4FA004E5375 /* FrutasTableViewCell.swift */,
+				A71500EA29BD6AF6004E5375 /* ViewController.swift */,
+				A715010B29BEACCB004E5375 /* AddFruitsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A715010729BE8F49004E5375 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A71500EC29BD6AF6004E5375 /* Main.storyboard */,
+				A715010E29BEC4FA004E5375 /* FrutasTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A715010A29BEAC31004E5375 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A71500E629BD6AF6004E5375 /* AppDelegate.swift */,
+				A71500E829BD6AF6004E5375 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CC4531EE6910EA2A162DF2FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3EAA43A3F09C1C9D6397A17 /* Pods_JAngelYacheDev.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71500F729BD6AF7004E5375 /* Build configuration list for PBXNativeTarget "JAngelYacheDev" */;
 			buildPhases = (
+				F23766ED11C655FD9A10A963 /* [CP] Check Pods Manifest.lock */,
 				A71500DF29BD6AF6004E5375 /* Sources */,
 				A71500E029BD6AF6004E5375 /* Frameworks */,
 				A71500E129BD6AF6004E5375 /* Resources */,
+				578B128FAC1477E15DC9D1FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A715011029BEC4FA004E5375 /* FrutasTableViewCell.xib in Resources */,
 				A71500F329BD6AF7004E5375 /* LaunchScreen.storyboard in Resources */,
 				A71500F029BD6AF7004E5375 /* Assets.xcassets in Resources */,
 				A71500EE29BD6AF6004E5375 /* Main.storyboard in Resources */,
@@ -133,12 +242,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		578B128FAC1477E15DC9D1FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JAngelYacheDev/Pods-JAngelYacheDev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JAngelYacheDev/Pods-JAngelYacheDev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JAngelYacheDev/Pods-JAngelYacheDev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F23766ED11C655FD9A10A963 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JAngelYacheDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A71500DF29BD6AF6004E5375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A715010929BEA7CC004E5375 /* DateViewModel.swift in Sources */,
+				A715010029BD6B79004E5375 /* FrutasViewModel.swift in Sources */,
+				A715010329BD8899004E5375 /* Frutas.swift in Sources */,
+				A715010C29BEACCB004E5375 /* AddFruitsViewController.swift in Sources */,
 				A71500EB29BD6AF6004E5375 /* ViewController.swift in Sources */,
+				A71500FD29BD6B3C004E5375 /* DB.swift in Sources */,
+				A715010F29BEC4FA004E5375 /* FrutasTableViewCell.swift in Sources */,
+				A715010529BD89BD004E5375 /* Result.swift in Sources */,
 				A71500E729BD6AF6004E5375 /* AppDelegate.swift in Sources */,
 				A71500E929BD6AF6004E5375 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +440,7 @@
 		};
 		A71500F829BD6AF7004E5375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1129625C85927E7F9373CF23 /* Pods-JAngelYacheDev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +469,7 @@
 		};
 		A71500F929BD6AF7004E5375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670C9AAD605E6BF1D96770D5 /* Pods-JAngelYacheDev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
